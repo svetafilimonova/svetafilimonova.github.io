@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'gagalin';
+    src: url('/fonts/gagalin-regular-webfont.woff2') format('woff2'), url('/fonts/gagalin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lifehack';
+    src: url('/fonts/lifehack_medium-webfont.woff2') format('woff2'), url('/fonts/lifehack_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    background-image: url(../img/bg/greeting.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+}
+
+.header {
+    display: inline-block;
+}
+
+.header__logo {
+    display: inline-block;
+    width: 95px;
+    height: 73px;
+    background-image: url(../img/logo/logo.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 180px;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu__list {
+    display: inline-block;
+    list-style: none;
+}
+
+.menu__item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu__item:after {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 14px;
+}
+
+.menu__item-noafter:after {
+    display: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.button {
+    display: inline-block;
+}
+
+.button__link {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: rgb(228, 80, 40);
+    width: 97px;
+    height: 35px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.button__link:hover {
+    background-color: #c1401e;
+}
+
+.sidebar {
+    width: 10%;
+    float: right;
+}
+
+.navigation__list {
+    list-style: none;
+    padding-right: 50px;
+    position: fixed;
+    top: 12%;
+    right: 19%;
+}
+
+.navigation__list-link {
+    position: relative;
+}
+
+.navigation__list-item{
+    margin-bottom: 4px;
+}
+
+.navigation__list-link:after {
+    content: "";
+    display: none;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 3px;
+    left: -6px;
+}
+
+.navigation__list-link:hover:after {
+    display: block;
+}
+
+
+
+.greeting__content-picture {
+    background-image: url(../img/bg/drops.png);
+    background-repeat: no-repeat;
+    width: 456px;
+    height: 418px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.greeting__content-text {
+    display: inline-block;
+    vertical-align: middle;
+    width:50%;
+    margin-top: 68px;
+    margin-left: 19px;
+}
+
+.greeting__content-text_orange {
+    font-family: 'gagalin';
+    font-size: 72px;
+    color: #f9b43b;
+    margin-bottom: 14px;
+}
+
+.greeting__content-text_white {
+    font-family: 'lifehack';
+    font-size: 65px;
+    color: #ffffff;
+}
+
+.arrow {
+ background-image: url(../img/icons/arrow-scroll.png);
+ background-repeat: no-repeat;
+ width: 45px;
+ height: 25px;
+ display: inline-block;
+ position: absolute;
+ left:35%;
+ bottom:0%;
+}
