@@ -161,6 +161,8 @@ body {
     height: 418px;
     display: inline-block;
     vertical-align: middle;
+    margin-left: 20px;
+    margin-top: -9px;
 }
 
 
@@ -168,8 +170,8 @@ body {
     display: inline-block;
     vertical-align: middle;
     width:50%;
-    margin-top: 68px;
-    margin-left: 19px;
+    margin-top: 89px;
+    margin-left: 9px;
 }
 
 .greeting__content-text_orange {
@@ -192,6 +194,6 @@ body {
  height: 25px;
  display: inline-block;
  position: absolute;
- left:35%;
+ left:50%;
  bottom:0%;
 }
