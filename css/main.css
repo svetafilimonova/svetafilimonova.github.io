@@ -206,8 +206,9 @@ body {
 .about__container {
   background-image: url(../img/bg/about.jpg);
   background-repeat: no-repeat;
-  height:655px;
+  height:100vh; 
 background-size: cover;
+/* background-position: 2% 2%; */
 
 }
 
