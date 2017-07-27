@@ -33,6 +33,9 @@ body {
     clear: both;
 }
 
+.section {
+    height: 100vh;
+}
 .wrapper {
     background-image: url(../img/bg/greeting.jpg);
     background-repeat: no-repeat;
@@ -81,7 +84,7 @@ body {
     margin-left: 14px;
 }
 
-.menu__item-noafter:after {
+.menu__item:last-child:after {
     display: none;
 }
 
@@ -174,14 +177,14 @@ body {
     margin-left: 9px;
 }
 
-.greeting__content-text_orange {
+.greeting__content-title_orange {
     font-family: 'gagalin';
     font-size: 72px;
     color: #f9b43b;
     margin-bottom: 14px;
 }
 
-.greeting__content-text_white {
+.greeting__content-title_white {
     font-family: 'lifehack';
     font-size: 65px;
     color: #ffffff;
@@ -197,3 +200,76 @@ body {
  left:50%;
  bottom:0%;
 }
+
+.about__container {
+  background-image: url(../img/bg/about.jpg);
+  background-repeat: no-repeat;
+  height:655px;
+background-size: cover;
+
+}
+
+.about__header {
+    font-family: 'gagalin';
+    font-size: 72px;
+    text-align: center;
+    color:#2f3234; 
+}
+
+.about__description-info {
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    vertical-align:text-top;
+    margin-left: 77px;
+
+
+}
+
+.about__description-pic {
+    width: 200px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+
+}
+ 
+.about__description-title {
+    font-family: 'lifehack';
+    font-size: 24px;
+    color:#2f3234;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.about__description-text {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 14px;
+    color: #848281;
+
+}
+
+.feedback__block {
+    display: inline-block;
+    width:25%;
+    font-size: 0;
+    position: relative;
+
+}
+
+.feedback__photo {
+    width:100%;
+    height: 320px;
+    font-size: 0;
+    filter: grayscale(100%);
+}
+
+.feedback__text {
+    position: absolute;
+    width:100%;
+    height: 320px;
+
+}
+
