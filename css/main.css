@@ -284,17 +284,21 @@ body {
 
 .feedback__container {
     font-size: 0;
+    height: 100%;
+    min-height: 650px;
+
 }
 
 .feedback__block {
     display: inline-block;
     width: 25%;
+    height: 50%;
     position: relative;
 }
 
 .feedback__photo {
     width: 100%;
-    height: 320px;
+    height:100%;
     filter: grayscale(100%);
     opacity: 1;
 }
@@ -302,7 +306,7 @@ body {
 .feedback__text {
     position: absolute;
     width: 100%;
-    height: 320px;
+    height:100%;
     background-color: rgba(0, 0, 0, .5);
     top: 0%;
     left: 0%;
@@ -312,15 +316,17 @@ body {
 
 .feedback__text-wrapper {
     width: 230px;
-    margin-left: 20px;
-    margin-top: 44px;
+    height:100%;
+    margin-left: 26px;
+    /* margin-top: 44px; */
     line-height: 1.6;
 }
 
 .feedback__name {
     font-size: 14px;
     font-family: 'gagalin';
-    margin-bottom: 17px;
+    margin-bottom: 21px;
+    margin-top: 42px;
 }
 
 .feedback__comment {
@@ -365,34 +371,41 @@ body {
 .feedback__photo-two {
     background-position: 56% 27%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .feedback__photo-three {
     background-position: 55% 18%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .feedback__photo-four {
     background-position: 98% 36%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .feedback__photo-five {
     background-position: 3% 1%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .feedback__photo-six {
     background-position: 71% 0%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .feedback__photo-seven {
     background-position: 36% 48%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .feedback__photo-eight {
     background-position: 100% 32%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
