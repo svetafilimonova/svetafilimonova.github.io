@@ -35,17 +35,42 @@ body {
 
 .section {
     height: 100vh;
+    min-height: 650px;
+    
 }
 
-.wrapper {
+
+ .greeting__container {
+    /* text-align: center; */
+    vertical-align: middle;
+} 
+.greeting__container:before {
+    content: "";
+    height: 100%;
+    width: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.greeting {
     background-image: url(../img/bg/greeting.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 100%;
+    
 }
 
+/* .greeting__content {
+  margin-top: 50px; 
+} */
+.section__wrapper {
+    margin: 0 auto;
+}
 .header {
+    display: inline-block;
+}
+
+.header__logo-link{
     display: inline-block;
 }
 
@@ -128,7 +153,7 @@ body {
     padding-right: 50px;
     position: fixed;
     top: 12%;
-    right: 19%;
+    right: 5%;
 }
 
 .navigation__list-link {
@@ -156,6 +181,10 @@ body {
     display: block;
 }
 
+
+.greeting__content {
+    vertical-align: middle;
+}
 .greeting__content-picture {
     background-image: url(../img/bg/drops.png);
     background-repeat: no-repeat;
@@ -164,28 +193,32 @@ body {
     display: inline-block;
     vertical-align: middle;
     margin-left: 20px;
-    margin-top: -9px;
 }
 
 .greeting__content-text {
     display: inline-block;
     vertical-align: middle;
     width: 50%;
-    margin-top: 89px;
+    margin-top: 55px;
     margin-left: 9px;
 }
 
-.greeting__content-title_orange {
-    font-family: 'gagalin';
-    font-size: 72px;
-    color: #f9b43b;
-    margin-bottom: 14px;
+.section__title {
+  font-family: 'gagalin';
+  font-size: 72px;
 }
 
-.greeting__content-title_white {
+
+.section__title_orange {
+    color: #f9b43b;
+    margin-bottom: 3px;
+}
+
+.section__title_white {
     font-family: 'lifehack';
     font-size: 65px;
     color: #ffffff;
+    line-height: 1;
 }
 
 .arrow {
@@ -196,25 +229,22 @@ body {
     display: inline-block;
     position: absolute;
     left: 50%;
-    bottom: 0%;
+    top: 95%;
 }
 
-.about__container {
+.about {
     background-image: url(../img/bg/about.jpg);
     background-repeat: no-repeat;
-    height: 100%;
     background-size: cover;
     background-position: center center;
 }
 
-.about__header {
-    font-family: 'gagalin';
-    font-size: 72px;
+.section__title_black {
     font-weight: 500;
     text-align: center;
     color: #2f3234;
     margin-top: 0;
-    padding-top: 79px;
+    padding-top: 57px;
 }
 
 .about__description-info {
@@ -222,9 +252,13 @@ body {
     display: inline-block;
     text-align: center;
     vertical-align: text-top;
-    margin-left: 77px;
+    margin-left: 22px;
 }
 
+.about__description {
+    width: 1000px;
+    margin: 0 auto;
+}
 .about__description-pic {
     width: 200px;
     height: 120px;
@@ -237,8 +271,8 @@ body {
     font-family: 'lifehack';
     font-size: 24px;
     color: #2f3234;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .about__description-text {
